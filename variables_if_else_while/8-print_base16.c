@@ -16,7 +16,7 @@ int main(void)
 	{
 	if (hexa < 10)
 	{
-		putchar('0' + hexa );
+		putchar('0' + hexa);
 	}
 	else
 	{
