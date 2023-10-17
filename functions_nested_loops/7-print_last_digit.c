@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <ctype.h>
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -18,7 +19,11 @@ int print_last_digit(int n)
 
 	if (n < 0)
 	{
-		n = 0 - n;
+		if (n == INT_MIN)
+		{
+			n = -8;
+		}
+		n = -n;
 	}
 	ld = n % 10;
 	_putchar('0' + ld);
