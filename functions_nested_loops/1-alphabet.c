@@ -3,12 +3,15 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Prints the alphabet
+ *
+ * main - check the code
  *
  * Return: Always 0 (Sucess)
+ *
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char ltr = 'a';
 		while (ltr <= 'z')
@@ -16,6 +19,11 @@ int main(void)
 		_putchar(ltr);
 		ltr++;
 		}
-		_putchar('\n');
-		return (0);
+}
+
+int main(void)
+{
+	print_alphabet();
+	_putchar('\n');
+	return (0);
 }
