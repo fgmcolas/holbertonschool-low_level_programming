@@ -6,6 +6,7 @@
 /**
  * _putchar - writes the character c to stdout
  * print_alphabet - prints the alphabet
+ * print_alphabetx10 - prints the alphabet ten times
  * @c: The character to print
  *
  * Return: On success 1.
@@ -14,4 +15,5 @@
 
 int _putchar(char c);
 void print_alphabet(void);
+void print_alphabet_x10(void);
 #endif
