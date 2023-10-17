@@ -5,6 +5,7 @@
 /**
  * print_alphabet - Prints the alphabet
  *
+ * main - Entry point
  * Return: Always 0 (Sucess)
  *
  */
@@ -15,7 +16,12 @@ void print_alphabet(void)
 		while (ltr <= 'z')
 		{
 		_putchar(ltr);
+		ltr++;
 		}
-	ltr++;
+}
+int main(void)
+{
+	print_alphabet();
 	_putchar('\n');
+	return (0);
 }

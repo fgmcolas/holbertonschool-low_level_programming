@@ -5,6 +5,7 @@
 
 /**
  * _putchar - writes the character c to stdout
+ * print_alphabet - prints the alphabet
  * @c: The character to print
  *
  * Return: On success 1.
@@ -12,5 +13,5 @@
  */
 
 int _putchar(char c);
-
+void print_alphabet(void);
 #endif
