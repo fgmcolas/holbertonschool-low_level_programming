@@ -5,8 +5,6 @@
 /**
  * print_alphabet - Prints the alphabet
  *
- * main - check the code
- *
  * Return: Always 0 (Sucess)
  *
  */
@@ -17,13 +15,7 @@ void print_alphabet(void)
 		while (ltr <= 'z')
 		{
 		_putchar(ltr);
-		ltr++;
 		}
-}
-
-int main(void)
-{
-	print_alphabet();
+	ltr++;
 	_putchar('\n');
-	return (0);
 }
