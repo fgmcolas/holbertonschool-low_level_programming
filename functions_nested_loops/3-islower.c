@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
