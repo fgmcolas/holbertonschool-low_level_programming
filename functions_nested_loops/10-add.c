@@ -4,15 +4,20 @@
 #include "main.h"
 
 /**
- * _isalpha - see if the character is alphabetic
- * @c: The character to print
- * main - Entry point
- * Return: Always 0 (Sucess)
+ * add - function with a and b, result will be c
  *
+ * @a: The character to print with a
+ *
+ * @b: The character to print with b
+ *
+ * Return: c
  */
 
 int add(int a, int b)
 {
-	int c = a + b;
+	int c;
+
+	c = a + b;
+
 	return (c);
 }
