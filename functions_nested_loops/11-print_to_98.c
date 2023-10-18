@@ -4,11 +4,9 @@
 #include "main.h"
 
 /**
- * add - function with a and b, result will be c
+ * print_to_98 - function with a and b, result will be c
  *
- * @a: The character to print with a
- *
- * @b: The character to print with b
+ * @n: The number
  *
  * Return: c
  */
