@@ -23,32 +23,27 @@ void times_table(void)
 		{
 			result = unit * multi;
 
-				if (multi < 9)
+				if (result < 10)
 				{
-					if (result < 10)
+					if (multi > 0)
 					{
-						_putchar(' ');
+						_putchar(' ');						
 					}
-					else
-					{
-						_putchar('0' + result / 10);
-					}
-					_putchar('0' + result % 10);
-					_putchar(',');
-					_putchar(' ');
+					_putchar('0' + result);
 				}
-				else
-					if (result <= 10)
-					{
-						_putchar(' ');
-						_putchar('0' + result % 10);
-						_putchar('\n');
-
-					}
 				else
 				{
 					_putchar('0' + result / 10);
 					_putchar('0' + result % 10);
+				}
+
+				if (multi < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				else
+				{
 					_putchar('\n');
 				}
 		}
