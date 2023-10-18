@@ -17,21 +17,31 @@ void print_to_98(int n)
 {
 	int nmb;
 
-	for (nmb = n; nmb <= 98; nmb++)
+	if (n < 98)
 	{
-		printf("%d", nmb);
-		if (nmb < 98)
+		for (nmb = n; nmb <= 98; nmb++)
 		{
-			printf(", ");
+			printf("%d", nmb);
+			if (nmb < 98)
+			{
+				printf(", ");
+			}
 		}
 	}
-	for (nmb = n; nmb >= 98; nmb--)
+	else if (n > 98)
 	{
-		printf("%d", nmb);
-		if (nmb > 98)
+		for (nmb = n; nmb >= 98; nmb--)
 		{
-			printf(", ");
+			printf("%d", nmb);
+			if (nmb > 98)
+			{
+				printf(", ");
+			}
 		}
+	}
+	else
+	{
+		printf("98");
 	}
 	printf("\n");
 }
