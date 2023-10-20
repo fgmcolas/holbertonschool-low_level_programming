@@ -22,7 +22,6 @@ void more_numbers(void)
 		}
 		else
 		{
-			_putchar('0' + n / 10);
 			_putchar('0' + n % 10);
 		}
 	}
