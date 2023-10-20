@@ -4,8 +4,6 @@
 /**
  * print_numbers - prototype for main.h
  *
- * @c: Character
- *
  * Return: 0
  */
 
