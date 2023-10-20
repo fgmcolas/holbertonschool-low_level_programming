@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _issuper - prototype for main.h
+ * _isupper - prototype for main.h
  *
  * @c: Character
  *
