@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_traingle - prototype for main.h
+ * print_triangle - prototype for main.h
  *
  * @size: size of the square
  *
