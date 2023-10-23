@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - prototypes
+ * swap_int - prototypes
  *
- * @n: pointer
+ * @a: pointer1
+ * @b: pointer2
  */
 
 void swap_int(int *a, int *b)
