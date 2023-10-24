@@ -3,22 +3,22 @@
 #include <string.h>
 
 /**
- * _strcpy - prototypes
+ * *_strcpy - prototypes
  *
  * @dest: pointer
  * @src: pointer
+ *
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	char *d = dest;
-	char *s = src;
+	int i;
 
-	while (*s != '\0')
+	while (src[i])
 	{
-		*d = *s;
-		d++;
-		s++;
+		dest[i] = src[i];
+		i++;
 	}
 
 	return (dest);
