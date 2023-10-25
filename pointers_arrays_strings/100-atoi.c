@@ -22,7 +22,7 @@ int _atoi(char *s)
 			sign *= -1;
 		}
 		i++;
-		
+
 		if (s[i] == '\0')
 		{
 			return (0);
