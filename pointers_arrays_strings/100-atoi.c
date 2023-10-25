@@ -18,13 +18,13 @@ int _atoi(char *s)
 	
 	while (s[i] != '\0')
 	{
-		if (s[i] == '-' && !numstart)
+		if (s[i] == '-')
 		{
 			sign *= -1;
 			i++;
 		}
 
-		else if (s[i] == '+' && !numstart)
+		else if (s[i] == '+')
 		{
 			i++;
 		}
@@ -47,7 +47,7 @@ int _atoi(char *s)
 		i++;
 		}
 
-		else if (numstart)
+		else
 		{
 			break;
 		}
