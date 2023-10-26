@@ -5,22 +5,31 @@
  * cap_string - prototypes
  *
  * @s: pointer
+ *
+ * Return: s
  */
 
 char *cap_string(char *s)
 {
-	int i = 0;
+	int i;
+	int j;
+	char c[] = {',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
 
-	while (s[i])
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (!(s[i] >= 'a' && s[i] <= 'z'))
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
 		{
-			i++;
+			str[i] = s[i] - 32;
 		}
-		if (s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n' || s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' || s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' || s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}' || i == 0)
+		for (j = 0; j < sizeof(c) / sizeof(c[0]); j++)
 		{
-			s[i] = s[i] - 32;
-			i++;
+			if (s[i] == c[j])
+			{
+				if (s[i + 1] >= 'a' && str[i + 1] <= 'z')
+				{
+					s[i] = s[i] - 32;
+				}
 		}
 	}
 	return (s);
