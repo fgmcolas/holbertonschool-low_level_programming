@@ -5,8 +5,8 @@
  * _memcpy- prototypes
  *
  * @dest: char
- * @str: src
- * n : unsigned int
+ * @src: char
+ * @n: unsigned int
  *
  * Return: dest
  */
