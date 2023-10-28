@@ -4,7 +4,10 @@
 /**
  * _strchr - prototypes
  *
- * @n: pointer
+ * @s: pointer
+ * @c: char
+ *
+ * Return: S or NULL
  */
 
 char *_strchr(char *s, char c)
@@ -12,7 +15,7 @@ char *_strchr(char *s, char c)
 
 	while (*s != '\0')
 	{
-		if(*s == c)
+		if (*s == c)
 		{
 			return (s);
 		}
