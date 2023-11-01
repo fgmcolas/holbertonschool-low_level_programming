@@ -7,7 +7,7 @@
  * @x: number
  * @y: power of
  *
- * Return: j or -1
+ * Return: 1 or -1
  */
 
 int _pow_recursion(int x, int y)
