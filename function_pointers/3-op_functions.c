@@ -11,7 +11,7 @@ int op_add(int a, int b)
 {
 	return (a + b);
 }
-i
+
 /**
  * op_sub - function
  * @a: int a
