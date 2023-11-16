@@ -31,7 +31,7 @@ void print_float(va_list list)
 }
 
 /**
- * print_strings - function
+ * print_string - function
  * @list: va_list
  */
 
@@ -59,22 +59,33 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0;
+	int j;
 	char *sep = "";
+
+	print_t functions[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+	};
 
 	va_start(args, format);
 
-	while (format && format[i])
+	while (format[i])
 	{
-		if (format[i] == 'c')
-			printf("%s", sep), print_char(args);
-		if (format[i] == 'i')
-			printf("%s", sep), print_int(args);
-		if (format[i] == 'f')
-			printf("%s", sep), print_float(args);
-		if (format[i] == 's')
-			printf("%s", sep), print_string(args);
+		j = 0;
 
-		sep = ", ";
+		while (j < 4)
+		{
+			if (format[i] == *functions[j].specifier)
+			{
+				printf("%s", sep);
+				functions[j].printer(args);
+				sep = ", ";
+				break;
+			}
+			j++;
+		}
 		i++;
 	}
 
