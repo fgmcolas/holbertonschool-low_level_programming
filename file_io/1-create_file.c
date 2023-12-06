@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 			contentLength++;
 	}
 
-	fileDescriptor = open(filename, O_CREAT | O_RDWR | O_TRUNC, 600);
+	fileDescriptor = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	bytesWritten = write(fileDescriptor, text_content, contentLength);
 
 	if (fileDescriptor == -1 || bytesWritten == -1)
