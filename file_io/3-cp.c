@@ -12,8 +12,8 @@
  */
 
 int main(int argc, char *argv[])
-{	int fdTo, fdFrom;
-	ssize_t bytesWritten, bytesRead;
+{
+	int fdTo, fdFrom, bytesWritten, bytesRead;
 	char buffer[1024];
 	char *file_from = argv[1], *file_to = argv[2];
 
